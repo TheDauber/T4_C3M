@@ -6,7 +6,8 @@ using UnityEngine;
 public class CoutDown : MonoBehaviour
 {
     private TextMeshProUGUI countText;
-
+    public Transform player;
+    public Transform deathAnchor;
     public float time = 90f;
     void Start()
     {
@@ -14,9 +15,13 @@ public class CoutDown : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         countText.SetText(Mathf.Round(time).ToString());
         time -= Time.deltaTime;
+        if (time <= 0) 
+        {
+            player.position = deathAnchor.position;
+        }
     }
 }
