@@ -10733,12 +10733,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1099752620}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1099752622 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1528666310737360430, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
-    type: 3}
-  m_PrefabInstance: {fileID: 1099752620}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1102147682
 GameObject:
   m_ObjectHideFlags: 0
@@ -13287,6 +13281,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: ad77cbe223d0f5e459175facc032b464,
     type: 3}
   m_PrefabInstance: {fileID: 1222779527}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1227489560 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1528666310737360430, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1561750799}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1243773391
 PrefabInstance:
@@ -16979,7 +16979,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 1561750799}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1227489560}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28c1a60b48cad9e4c81572d96ee8a215, type: 3}
@@ -24628,7 +24628,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 673d5c1ac40d8cf449fa8edcd69d392d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ballPrefab: {fileID: 1099752622}
+  ballPrefab: {fileID: 1227489560}
   spawnPoint: {fileID: 2123250008}
   launchForce: 50
   fireRate: 6
