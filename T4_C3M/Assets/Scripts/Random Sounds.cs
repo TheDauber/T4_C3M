@@ -24,7 +24,7 @@ public class RandomSounds : MonoBehaviour
                 randomAudioClip = audioClips[Random.Range(0, audioClips.Count)];
                 source.clip = randomAudioClip;
                 source.Play();
-                randomTime += Random.Range(8, 10);
+                randomTime += Random.Range(10, 17);
             }
         }
     }
