@@ -309,6 +309,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PotionBottle_2
       objectReference: {fileID: 0}
+    - target: {fileID: 1528666310737360430, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 2552890292047807549, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
         type: 3}
       propertyPath: m_RootOrder
@@ -3680,12 +3685,31 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 383891509}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &386967979 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1837324664885972820, guid: d45e8a6999317d2428a51593da44d3ab,
+    type: 3}
+  m_PrefabInstance: {fileID: 1358349926}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &386967980 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1837324664885972822, guid: d45e8a6999317d2428a51593da44d3ab,
     type: 3}
   m_PrefabInstance: {fileID: 1358349926}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &386967983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 386967979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dec80a22b39d4574285a4858192564b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathAnchor: {fileID: 1123941432}
 --- !u!4 &388535753 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3733091860893705619, guid: ba179794458011749b87f8ff88b4c662,
@@ -10650,11 +10674,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2552890292047807549, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
         type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2552890292047807549, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
-        type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.9561405
       objectReference: {fileID: 0}
@@ -10703,20 +10722,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3008751953053174181, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
-        type: 3}
-      propertyPath: m_Convex
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6169833705027429769, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1528666310737360430, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1099752628}
   m_SourcePrefab: {fileID: 100100000, guid: 97fa8c9687fbf0d4cad34eb10285e06a, type: 3}
 --- !u!4 &1099752621 stripped
 Transform:
@@ -10730,6 +10743,28 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1099752620}
   m_PrefabAsset: {fileID: 0}
+--- !u!64 &1099752628
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1099752622}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &1102147682
 GameObject:
   m_ObjectHideFlags: 0
@@ -12188,7 +12223,7 @@ Transform:
   m_GameObject: {fileID: 1123941431}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.1151, y: 0.6163, z: 0.406}
+  m_LocalPosition: {x: 0.1151, y: 0.075, z: 0.406}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14499,6 +14534,10 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 124241445}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1837324664885972820, guid: d45e8a6999317d2428a51593da44d3ab,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 386967983}
     - targetCorrespondingSourceObject: {fileID: 1837324663941945069, guid: d45e8a6999317d2428a51593da44d3ab,
         type: 3}
       insertIndex: 4
@@ -18099,6 +18138,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PotionBottle_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528666310737360430, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2552890292047807549, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
         type: 3}
